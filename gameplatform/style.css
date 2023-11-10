@@ -1,0 +1,428 @@
+@font-face {
+    font-family: ave;
+    src: url("1.ttf");
+}
+
+
+a{
+    text-decoration: none;
+}
+
+body{background-color: rgb(46, 29, 143);
+margin: 0 0 0 0;
+font-family: ave;
+font-size: 100%;}
+
+.logo{
+    margin: 0px 50px;
+    font-size: 40px;
+    font-weight: bold;
+    color:aqua;
+}
+.headertext{
+    font-family: ave;
+    font-size: 20px;
+    color:aquamarine;
+    outline: solid 2px;
+    outline-offset: 5px;
+    border-radius: 20px;
+    width: 50%;
+}
+.header a{
+    margin-left: 10%;
+    text-wrap: nowrap;
+}
+.headertext:hover{background-color: white;outline: white solid 10px; outline-offset: -1px;}
+.header{
+    display: flex;
+    background-color: #2F2FA2;
+    align-items: center;
+    height: 100%;
+    box-shadow: 2px 2px 2px 2px black;
+    width: 100%;
+    flex-wrap: wrap;}
+.about{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto;
+    width: 100%;
+    min-height: 1000px;
+    height: 100%;
+}
+.about::after {
+    background-image: url(aditya-chinchure-ZhQCZjr9fHo-unsplash.jpg);
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    max-height: 1000px;
+    opacity: 50%;
+    z-index: -1;
+    background-repeat: no-repeat;
+}
+.sl{
+    text-align: center;
+    font-family: ave;
+    font-size: 45px;
+    color:rgba(0, 255, 255);
+    margin: 20px;
+}
+.abouttext{
+    text-align: center;
+    font-family: ave;
+    font-size: 30px;
+    color:rgba(255, 255, 255);
+}
+.download{
+    max-width: 350px;
+    height: 40%;
+    width: 100%;
+    font-family: ave;
+    font-size: 35px;
+    color: #2F2FA2;;
+    background-color: rgba(0, 255, 255);
+    align-self: center;
+    justify-self: center;
+    margin-bottom: 40px;
+    border-radius: 99rem;
+    border-width: 3px;
+    border-color: black;
+    cursor: pointer;
+}
+.ads{
+height: 350px;
+margin: 35px;
+display: flex;
+align-items: center;
+white-space:pre-wrap;
+}
+.hrr {
+    border-color: white ;
+    background-color: white;
+    height: 1px;
+}
+.adsphoto{
+    height: 350px;
+    width: 500px;
+    min-width: 10%;
+}
+.photo{
+    margin-left: 30px;
+    height: 350px;
+    width: 350px;
+    min-height: 20%;
+    max-width: 100%;
+}
+.adstext{
+    color: white;
+    font-family: ave;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 30px;
+    vertical-align: middle;
+    }
+.kinoind{
+    height: 450px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    text-indent: 50px;
+}    
+.slider {
+	width: 100%;
+    max-width: 900px;
+	text-align: center;
+	overflow: hidden;
+	position: relative;
+    left: 50%;
+    transform: translate(-50%);
+	}
+    
+.slides {
+	display: flex;
+	overflow-x: auto;
+	scroll-snap-type: x mandatory;
+	scroll-behavior: smooth;
+    
+}
+.slides::-webkit-scrollbar {
+overflow-x: hidden;
+	}
+	.slides > div {
+		flex-shrink: 0;
+		width: 900px;
+		height: 900px;
+		border-radius: 10px;
+		background: #eee;
+		transform-origin: center center;
+		transform: scale(1);
+		transition: transform 0.5s;
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		}
+	.slides img{
+		width: 100%;
+		height: 100%;
+	}
+    .slidetext{
+        display: inline-flex;
+        font-size: 25px;
+        border-radius: 10px;
+        margin: 0 0 20px 10px;
+        font-family: ave;
+        text-wrap: wrap;
+    }
+	.slider > a {
+		display: inline-flex;
+		width: 200px;
+		height: 100px;
+		background: white;
+		text-decoration: none;
+		align-items: center;
+		justify-content: center;
+		position: relative;
+		}
+	.slider > a:active {
+		top: 1px;
+		color: #1c87c9;
+		}
+		.slider > a:focus {
+			background: #eee;
+			}
+@media screen and (max-width: 320px){
+    body {
+        width: 100%;
+    }
+    .logo{
+        margin: 0 0 0 30px;
+    }
+    .headertext{
+        font-family: ave;
+        font-size: 7px;
+        color:aquamarine;
+        outline: solid 2px;
+        outline-offset: 5px;
+    }
+    .header{
+        height: 150%;
+    }
+    .sl{
+        font-size: 80% ;
+    }
+    .abouttext{
+        font-size: 80%;
+    }
+    .about{
+        height: 400px;
+        min-height: 400px;
+    }
+    .download{
+        font-size: 15px;
+    }
+    .about::after {
+        width: 100%;
+        height: 100%;
+        max-height: 400px;}
+
+    .ads{
+        flex-wrap: wrap;
+        max-height: 400px;
+    }
+    .adsphoto{
+        max-height: 200px;
+        align-items: center;
+    }
+    .adstext{
+        font-size: 12px;
+    }
+    .kinoind{
+        flex-wrap: wrap;
+    }
+    .photo{
+        max-height: 200px;
+        max-width: 250px;
+    }
+    .slider{
+        max-width: 320px;
+    }
+    .slider a {
+        max-width: 125px;
+        max-height: 50px;
+    }
+    .slidetext{
+        font-size: 15px;
+    }
+    .slides{
+        max-width: 320px;
+    }
+    .slides > div{
+        width: 320px;
+		height: 320px;
+    } 
+    .slides img{
+        width: 100%;
+        margin-right: 0px;
+    }
+}
+@media screen and (min-width: 321px) and (max-width: 768px){
+    body {
+        width: 100%;
+    }
+    .headertext{
+        font-family: ave;
+        font-size: 7px;
+        color:aquamarine;
+        outline: solid 2px;
+        outline-offset: 5px;
+    }
+    .logo{
+        margin: 0 0 0 10px;
+    }
+    .sl{
+        font-size: 80% ;
+    }
+    .abouttext{
+        font-size: 80%;
+    }
+    .about{
+        height: 400px;
+        min-height: 400px;
+    }
+    .download{
+        font-size: 15px;
+    }
+    .about::after {
+        width: 100%;
+        height: 100%;
+        max-height: 400px;}
+
+    .ads{
+        flex-wrap: wrap;
+        max-height: 400px;
+    }
+    .adsphoto{
+        max-height: 200px;
+        align-items: center;
+    }
+    .adstext{
+        font-size: 12px;
+    }
+    .kinoind{
+        flex-wrap: wrap;
+    }
+    .photo{
+        max-height: 200px;
+        max-width: 250px;
+    }
+    .slider{
+        max-width: 320px;
+    }
+    .slider a {
+        max-width: 125px;
+        max-height: 50px;
+    }
+    .slidetext{
+        font-size: 15px;
+    }
+    .slides{
+        max-width: 320px;
+    }
+    .slides > div{
+        width: 320px;
+		height: 320px;
+    } 
+    .slides img{
+        width: 100%;
+        margin-right: 0px;
+    }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px){
+    body {
+        width: 100%;
+    }
+    .headertext{
+        font-family: ave;
+        font-size: 7px;
+        color:aquamarine;
+        outline: solid 2px;
+        outline-offset: 5px;
+    }
+    .logo{
+        margin: 0 0 0 30px;
+    }
+    .sl{
+        font-size: 80% ;
+    }
+    .abouttext{
+        font-size: 80%;
+    }
+    .about{
+        height: 400px;
+        min-height: 400px;
+    }
+    .download{
+        font-size: 15px;
+    }
+    .about::after {
+        width: 100%;
+        height: 100%;
+        max-height: 400px;}
+    .kinoind{
+        height: 300px;
+    }
+    .ads{
+        flex-wrap: wrap;
+        max-height: 400px;
+    }
+    .adsphoto{
+        max-height: 200px;
+        align-items: center;
+
+    }
+    .adstext{
+        font-size: 18px;
+    }
+    .photo{
+        max-height: 200px;
+        max-width: 250px;
+    }
+    .slider{
+        max-width: 320px;
+    }
+    .slider a {
+        max-width: 125px;
+        max-height: 50px;
+    }
+    .slidetext{
+        font-size: 15px;
+    }
+    .slides{
+        max-width: 320px;
+    }
+    .slides > div{
+        width: 320px;
+		height: 320px;
+    } 
+    .slides img{
+        width: 100%;
+        margin-right: 0px;
+    }
+}
+footer{
+    display: flex;
+}
+.footertext{
+    text-align: center;
+    font-family: ave;
+    font-size: 15px;
+    color:rgba(255, 255, 255);
+}
+.socies{
+    margin: 0 0 0 30px;
+    width: 30px;
+    height: 30px;
+}
+
+                        
