@@ -701,7 +701,7 @@ footer{
     border-color: gray;
   }
   body{
-    max-width: 320px;
+    max-width: 425px;
   }
   .vertical-menu{
     visibility: hidden;
@@ -712,7 +712,7 @@ footer{
     margin: 0 0 0 10px;
   }
   .overlay {
-    max-width: 320px;
+    max-width: 425px;
       height: 100%;
       width: 0;
       position: fixed;
@@ -907,7 +907,7 @@ footer{
     border-color: gray;
   }
   body{
-    max-width: 320px;
+    max-width: 768px;
   }
   .vertical-menu{
     visibility: hidden;
@@ -918,7 +918,7 @@ footer{
     margin: 0 0 0 10px;
   }
   .overlay {
-    max-width: 320px;
+    max-width: 768px;
       height: 100%;
       width: 0;
       position: fixed;
